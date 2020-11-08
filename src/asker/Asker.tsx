@@ -19,8 +19,17 @@ export const Asker = React.memo<IProps>((props) => {
   }, [questions.length]);
 
   return (
-    <div style={{ width: "min(20rem, 100%)", padding: "1rem" }}>
+    <div
+      style={{
+        width: "min(30rem, 100%)",
+        padding: "1rem",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <TextTransition
+        style={{ width: "min(20rem, 100%)" }}
         text={<Typography style={{}}>{questions[questionIndex]}</Typography>}
         springConfig={presets.wobbly}
       />

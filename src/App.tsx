@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 // @ts-ignore
 import TextTransition, { presets } from "react-text-transition";
 
 import questions from "./assets/questions.json";
 import { Asker } from "./asker/Asker";
 import { COLOR_TEXT_PRIMARY } from "./theme/themeConsts";
+import { Button } from "@material-ui/core";
+import { GameIntro } from "./gameIntro/GameIntro";
 
 function App() {
+  const [gameStarted, setGameStarted] = useState(false);
+
   return (
     <div
       style={{
@@ -35,7 +39,9 @@ function App() {
           color: COLOR_TEXT_PRIMARY,
         }}
       >
-        <Asker questions={questions} />
+        {gameStarted && <Asker questions={questions} />}
+
+        {!gameStarted && <GameIntro startGame={() => setGameStarted(true)} />}
       </div>
     </div>
   );
