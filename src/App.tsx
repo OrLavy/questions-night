@@ -3,10 +3,22 @@ import React, { useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 
 import questions from "./assets/questions.json";
-import { Asker } from "./asker/Asker";
+import { Asker, TPlayerGist } from "./asker/Asker";
 import { COLOR_TEXT_PRIMARY } from "./theme/themeConsts";
-import { Button } from "@material-ui/core";
 import { GameIntro } from "./gameIntro/GameIntro";
+import OrikImg from "./assets/orik.jpg";
+import LorikImg from "./assets/lorik.jpg";
+
+const players: TPlayerGist[] = [
+  {
+    name: "Orik",
+    imageSources: [OrikImg],
+  },
+  {
+    name: "Lorik",
+    imageSources: [LorikImg],
+  },
+];
 
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
@@ -27,7 +39,7 @@ function App() {
           position: "absolute",
           margin: "auto",
           width: "min(40rem, 90vmin)",
-          height: "min(40rem, 90vmin)",
+          maxHeight: "min(40rem, 90vh)",
           right: 0,
           left: 0,
           top: 0,
@@ -39,7 +51,7 @@ function App() {
           color: COLOR_TEXT_PRIMARY,
         }}
       >
-        {gameStarted && <Asker questions={questions} />}
+        {gameStarted && <Asker questions={questions} players={players} />}
 
         {!gameStarted && <GameIntro startGame={() => setGameStarted(true)} />}
       </div>
