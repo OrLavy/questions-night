@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @ts-ignore
+import TextTransition, { presets } from "react-text-transition";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div style={{ height: '100%', position: 'relative' }}>
+        <div id={'centeredContainer'} style={{
+            backgroundColor: 'blue',
+            position: 'absolute', margin: 'auto', width: 'min(40rem, 90vmin)', height: 'min(40rem, 90vmin)', right: 0, left: 0, top: 0, bottom: 0, border: '1px solid black' }}>
+            <TextTransition
+                text={ 'Start game' }
+                springConfig={ presets.wobbly }
+            />
+        </div>
+      </div>
   );
 }
 
