@@ -1,0 +1,1 @@
+export const COLOR_TEXT_PRIMARY = "#FCF6F5FF";

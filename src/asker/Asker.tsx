@@ -3,6 +3,7 @@ import { Button, Typography } from "@material-ui/core";
 import { getRandomInt } from "../utils";
 // @ts-ignore
 import TextTransition, { presets } from "react-text-transition";
+import { COLOR_TEXT_PRIMARY } from "../theme/themeConsts";
 
 interface IProps {
   questions: string[];
@@ -25,7 +26,18 @@ export const Asker = React.memo<IProps>((props) => {
       />
       <br />
       <br />
-      <Button onClick={newRandomQuestion}>New Question</Button>
+      <br />
+      <Button
+        variant={"outlined"}
+        style={{
+          color: COLOR_TEXT_PRIMARY,
+          marginTop: "1em",
+          borderColor: COLOR_TEXT_PRIMARY,
+        }}
+        onClick={newRandomQuestion}
+      >
+        New Question
+      </Button>
     </div>
   );
 });

@@ -4,14 +4,22 @@ import TextTransition, { presets } from "react-text-transition";
 
 import questions from "./assets/questions.json";
 import { Asker } from "./asker/Asker";
+import { COLOR_TEXT_PRIMARY } from "./theme/themeConsts";
 
 function App() {
   return (
-    <div style={{ height: "100%", position: "relative" }}>
+    <div
+      style={{
+        height: "100%",
+        position: "relative",
+        // backgroundColor: "#e00000",
+        backgroundColor: "#990011",
+      }}
+    >
       <div
         id={"centeredContainer"}
         style={{
-          backgroundColor: "blue",
+          backgroundColor: "rgba(0,0,0,0.4)",
           position: "absolute",
           margin: "auto",
           width: "min(40rem, 90vmin)",
@@ -24,6 +32,7 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          color: COLOR_TEXT_PRIMARY,
         }}
       >
         <Asker questions={questions} />
