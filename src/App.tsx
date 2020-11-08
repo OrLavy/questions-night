@@ -7,6 +7,7 @@ import { Asker, TPlayerGist } from "./asker/Asker";
 import { COLOR_TEXT_PRIMARY } from "./theme/themeConsts";
 import { GameIntro } from "./gameIntro/GameIntro";
 import OrikImg from "./assets/orik.jpg";
+import OrikImg1 from "./assets/orik_1.jpg";
 import LorikImg from "./assets/lorik.jpg";
 
 const players: TPlayerGist[] = [

@@ -102,14 +102,14 @@ export const Asker = React.memo<IProps>((props) => {
         }}
         onClick={randomAll}
       >
-        New Question
+        New Question ({changesCount})
       </Button>
 
       <br />
       <br />
       <CrossfadeImage
         src={players[playerIndex].imageSources[imageIndex]}
-        style={{ width: "max(250, 50%)" }}
+        style={{ width: "min(250, 50%)" }}
       />
       <br />
       <SpecialEffectsRow

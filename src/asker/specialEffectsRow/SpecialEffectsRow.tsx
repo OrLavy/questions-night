@@ -19,13 +19,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const DURATION = 1000;
+
 export const SpecialEffectsRow = React.memo<IProps>((props) => {
   const classes = useStyles();
   const { showCoocktail, showSushi, showWasabi } = props;
   console.log({ showWasabi });
   return (
     <div style={{ display: "flex" }}>
-      <Fade in={showSushi}>
+      <Fade in={showSushi} timeout={DURATION}>
         <SvgIcon
           className={clsx(classes.icon)}
           fontSize={"large"}
@@ -33,7 +35,7 @@ export const SpecialEffectsRow = React.memo<IProps>((props) => {
           viewBox={"0 -45 511.99923 511"}
         />
       </Fade>
-      <Fade in={showWasabi}>
+      <Fade in={showWasabi} timeout={DURATION}>
         <SvgIcon
           className={clsx(classes.icon)}
           fontSize={"large"}
@@ -41,7 +43,7 @@ export const SpecialEffectsRow = React.memo<IProps>((props) => {
           viewBox={"0 0 512 512"}
         />
       </Fade>
-      <Fade in={showCoocktail}>
+      <Fade in={showCoocktail} timeout={DURATION}>
         <SvgIcon
           className={clsx(classes.icon)}
           fontSize={"large"}
