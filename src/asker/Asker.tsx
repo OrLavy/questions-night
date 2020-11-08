@@ -67,21 +67,28 @@ export const Asker = React.memo<IProps>((props) => {
     <div
       style={{
         width: "min(30rem, 100%)",
-        padding: "1rem",
+        padding: "0rem",
+        paddingTop: "1rem",
+        paddingBottom: 0,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
+        boxSizing: "border-box",
       }}
     >
       <div
         style={{
           width: "min(20rem, 100%)",
-          justifySelf: "flex-start",
+          // justifySelf: "flex-start",
           marginBottom: "2rem",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+          textAlign: "center",
         }}
       >
         <TextTransition
+          style={{}}
           text={
             <Typography variant={"h6"} style={{}}>
               {questions[questionIndex]}
@@ -93,6 +100,7 @@ export const Asker = React.memo<IProps>((props) => {
       <br />
       <br />
       <br />
+      <br />
       <SpecialEffectsRow
         showCoocktail={flags.showCoocktail}
         showSushi={flags.showSushi}
@@ -101,6 +109,7 @@ export const Asker = React.memo<IProps>((props) => {
       <br />
       <Button
         variant={"outlined"}
+        size={"large"}
         style={{
           color: COLOR_TEXT_PRIMARY,
           marginTop: "1em",
@@ -115,9 +124,16 @@ export const Asker = React.memo<IProps>((props) => {
       <br />
       <CrossfadeImage
         src={players[playerIndex].imageSources[imageIndex]}
-        style={{ width: "min(250, 50%)" }}
+        style={{
+          width: "min(250, 100%)",
+          // height: 200,
+          borderRadius: "3rem",
+          // DEV_NOTE : This is because for some reason there are 3 pixels added to the bottom of the image
+          // bottom: 0,
+          // border: "30px solid black",
+          boxSizing: "border-box",
+        }}
       />
-      <br />
       {/*<img src={players[playerIndex].imageSource} width={"200"} />*/}
     </div>
   );
