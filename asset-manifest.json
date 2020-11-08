@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.35309c66.chunk.js",
-    "main.js.map": "/static/js/main.35309c66.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bb6006ff.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bb6006ff.js.map",
-    "static/js/2.60aabfe3.chunk.js": "/static/js/2.60aabfe3.chunk.js",
-    "static/js/2.60aabfe3.chunk.js.map": "/static/js/2.60aabfe3.chunk.js.map",
-    "static/js/3.e5e2446f.chunk.js": "/static/js/3.e5e2446f.chunk.js",
-    "static/js/3.e5e2446f.chunk.js.map": "/static/js/3.e5e2446f.chunk.js.map",
+    "main.css": "/static/css/main.0f582515.chunk.css",
+    "main.js": "/static/js/main.f2edc0c0.chunk.js",
+    "main.js.map": "/static/js/main.f2edc0c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0516262b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0516262b.js.map",
+    "static/js/2.b4c4249c.chunk.js": "/static/js/2.b4c4249c.chunk.js",
+    "static/js/2.b4c4249c.chunk.js.map": "/static/js/2.b4c4249c.chunk.js.map",
+    "static/js/3.bc44e62a.chunk.js": "/static/js/3.bc44e62a.chunk.js",
+    "static/js/3.bc44e62a.chunk.js.map": "/static/js/3.bc44e62a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.60aabfe3.chunk.js.LICENSE.txt": "/static/js/2.60aabfe3.chunk.js.LICENSE.txt",
-    "static/media/logo.103b5fa1.svg": "/static/media/logo.103b5fa1.svg"
+    "static/css/main.0f582515.chunk.css.map": "/static/css/main.0f582515.chunk.css.map",
+    "static/js/2.b4c4249c.chunk.js.LICENSE.txt": "/static/js/2.b4c4249c.chunk.js.LICENSE.txt",
+    "static/media/cocktail.0da37372.svg": "/static/media/cocktail.0da37372.svg",
+    "static/media/lorik.b4beb1ff.jpg": "/static/media/lorik.b4beb1ff.jpg",
+    "static/media/orik.a0475118.jpg": "/static/media/orik.a0475118.jpg",
+    "static/media/sushi.daf95f3e.svg": "/static/media/sushi.daf95f3e.svg",
+    "static/media/wasabi.3552ee0c.svg": "/static/media/wasabi.3552ee0c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb6006ff.js",
-    "static/js/2.60aabfe3.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.35309c66.chunk.js"
+    "static/js/runtime-main.0516262b.js",
+    "static/js/2.b4c4249c.chunk.js",
+    "static/css/main.0f582515.chunk.css",
+    "static/js/main.f2edc0c0.chunk.js"
   ]
 }
