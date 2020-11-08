@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/questions-night/static/css/main.0f582515.chunk.css",
-    "main.js": "/questions-night/static/js/main.b63a6468.chunk.js",
-    "main.js.map": "/questions-night/static/js/main.b63a6468.chunk.js.map",
+    "main.js": "/questions-night/static/js/main.c9297004.chunk.js",
+    "main.js.map": "/questions-night/static/js/main.c9297004.chunk.js.map",
     "runtime-main.js": "/questions-night/static/js/runtime-main.1e73fd75.js",
     "runtime-main.js.map": "/questions-night/static/js/runtime-main.1e73fd75.js.map",
     "static/js/2.b4c4249c.chunk.js": "/questions-night/static/js/2.b4c4249c.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.1e73fd75.js",
     "static/js/2.b4c4249c.chunk.js",
     "static/css/main.0f582515.chunk.css",
-    "static/js/main.b63a6468.chunk.js"
+    "static/js/main.c9297004.chunk.js"
   ]
 }
