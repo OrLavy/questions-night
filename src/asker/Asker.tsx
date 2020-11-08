@@ -93,6 +93,12 @@ export const Asker = React.memo<IProps>((props) => {
       <br />
       <br />
       <br />
+      <SpecialEffectsRow
+        showCoocktail={flags.showCoocktail}
+        showSushi={flags.showSushi}
+        showWasabi={flags.showWasabi}
+      />
+      <br />
       <Button
         variant={"outlined"}
         style={{
@@ -112,11 +118,6 @@ export const Asker = React.memo<IProps>((props) => {
         style={{ width: "min(250, 50%)" }}
       />
       <br />
-      <SpecialEffectsRow
-        showCoocktail={flags.showCoocktail}
-        showSushi={flags.showSushi}
-        showWasabi={flags.showWasabi}
-      />
       {/*<img src={players[playerIndex].imageSource} width={"200"} />*/}
     </div>
   );
