@@ -44,12 +44,16 @@ export const Asker = React.memo<IProps>((props) => {
   }, [players.length]);
 
   const flags = useMemo<tFlags>(() => {
-    const newRand = getRandomInt(0, 10000);
+    const newRand = getRandomInt(0, 100 + 1);
+
+    const coocktailP = 50;
+    const sushiP = 70;
+    const wasabiP = 33;
 
     const fl: tFlags = {
-      showCoocktail: changesCount % 2 === 0,
-      showSushi: changesCount % 2 === 1,
-      showWasabi: changesCount % 3 === 0,
+      showCoocktail: getRandomInt(0, 100 + 1) <= coocktailP,
+      showSushi: getRandomInt(0, 100 + 1) <= sushiP,
+      showWasabi: getRandomInt(0, 100 + 1) <= wasabiP,
     };
 
     return fl;
